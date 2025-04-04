@@ -54,8 +54,9 @@ with open('products_cosine_sim.pkl', 'rb') as f:
     cosine_sim_new = pickle.load(f)
 
 ###### Giao diện Streamlit ######
-st.image('hasaki_banner.jpg', use_column_width=True)
-
+#st.image('hasaki_banner.jpg', use_column_width=True)
+# use_container_width 
+st.image('hasaki_banner.jpg', use_container_width =True)
 # Kiểm tra xem 'selected_ma_san_pham' đã có trong session_state hay chưa
 if 'selected_ma_san_pham' not in st.session_state:
     # Nếu chưa có, thiết lập giá trị mặc định là None hoặc ID sản phẩm đầu tiên
